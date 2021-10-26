@@ -13,20 +13,17 @@ int main() {
         numbers.push_back(n);
         if (numbers[i] == numbers[i-1]) break;
     }
+    
     for (int j = 0; j < numbers.size()-2; j++) {
         if (numbers[j + 1] > numbers[j]) {
-//            incr = true;
-//            cout << "your subsequence is increasing" << endl;
-//            break;
         } else {
             incr = false;
-//            cout << "your subsequence is non-increasing" << endl;
-//            break;
         }
     }
+    
     if(incr){
         cout << "your subsequence is increasing" << endl;
-    }else{
+    } else {
         cout << "your subsequence is non-increasing" << endl;
     }
     return 0;
